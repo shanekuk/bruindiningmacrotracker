@@ -1,3 +1,5 @@
+<img width="2334" height="1282" alt="image" src="https://github.com/user-attachments/assets/ba945d99-af9a-4182-8382-36f1a3003429" />
+
 # BruinMacroTracker
 
 BruinMacroTracker is a Google Chrome Extension designed to help users track their daily macronutrient intake from UCLA dining halls efficiently.
