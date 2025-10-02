@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "UCLA Dining Macro Tracker",
+    "version": "1.0.0",
+    "description": "Extracts nutritional data from UCLA Dining menu pages and sends it to the extension popup.",
+    "permissions": [
+        "storage",
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://dining.ucla.edu/*"
+    ],
+    "background": {
+        "service_worker": "src/background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://dining.ucla.edu/*"
+            ],
+            "js": [
+                "src/content_script.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ],
+    "action": {
+        "default_popup": "src/popup/popup.html",
+        "default_title": "UCLA Macro Tracker"
+    }
+}
